@@ -1,0 +1,47 @@
+:root {
+  --darkmode: #101011;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--darkmode);
+}
+
+h1,
+p,
+header,
+li {
+  margin: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.galeria img {
+  border-radius: 10px;
+  border: 5px solid #fff;
+  margin: 10px 5px;
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+  transition: 0.5s;
+
+}
+
+.galeria img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transform: scale(1.2);
+}
